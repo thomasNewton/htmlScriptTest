@@ -1,0 +1,469 @@
+#button1 {
+    background-color: #cf245f;
+    background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+    border: 0;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    line-height: 1.75rem; /* 28px */
+    padding: 1rem 1.25rem;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #button1:hover {
+    box-shadow: none;
+  }
+  
+  @media (min-width: 1024px) {
+    #button1 {
+      font-size: 1.5rem; /* 24px */
+      padding: 1rem 1.5rem;
+      line-height: 2rem; /* 32px */
+    }
+  }
+  
+  
+  #button2{
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  #button2:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #EBEBEB;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  #button2:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  #button2:after {
+    background-color: #FFFFFF;
+  }
+  
+  #button2 span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  
+  
+  #button3 {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 70%;
+    max-width: 160px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #button3:focus {
+    outline: 0;
+    transform: rotate(2deg);
+  }
+  
+  #button3:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+  }
+  
+  #button3:hover:after {
+    bottom: 2px;
+    left: 2px;
+  }
+  
+  @media (min-width: 768px) {
+    #button3 {
+      padding: .75rem 3rem;
+      font-size: 1.25rem;
+    }
+  }
+  
+  
+  
+  #button4 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #button4:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+  
+  
+  
+  
+  #button5,
+  #button5:after {
+    width: 150px;
+    height: 76px;
+    line-height: 78px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #button5:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'ALTERNATE TEXT';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  #button5:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    #button5
+  ,
+    #button5
+  :after {
+      width: 200px;
+      height: 86px;
+      line-height: 88px;
+    }
+  }
+  
+  
+  #button6 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #button6::after,
+  #button6::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  #button6::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+  #button6::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  #button6:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  #button6:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  #button6:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+
+
+  html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #292929;
+    font: 90% Roboto, Arial, sans-serif;
+    font-weight: 300;
+}
+
+p {
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+ul li {
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+h3 {
+    padding: 5px 20px;
+    margin: 0;
+}
+
+div#header {
+    position: relative;
+    height: 120px;
+    background-color: transparent;
+    background-image: url("../img/Factorio-logo.png");
+    background-repeat: no-repeat;
+    background-position:  top;
+   border:2px solid DodgerBlue;
+     border-radius: 12px;
+
+}
+
+div#header h1 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+    
+    color: #292929;
+    
+}
+
+div#header a {
+    position: absolute;
+    right: 0;
+    top: 23px;
+    padding: 10px;
+    color: #006;
+    
+}
+
+div#navigation {
+  background-color: transparent;
+  background-image: url("../img/navp.png");
+  background-repeat: no-repeat;
+  background-position:  top;
+  border-radius: 12px;
+
+}
+
+div#navigation li {
+    list-style: none;
+}
+
+div#extra {
+  background-color: transparent;
+  background-image: url("../img/neon.png");
+  background-repeat: no-repeat;
+  background-position:  top;
+  color:aliceblue;
+  border-radius: 12px;
+}
+
+div#footer {
+  background-color: transparent;
+  background-image: url("../img/factorio-blogroll-01-1610496092448_160w.jpg");
+  border-radius: 12px;
+ 
+}
+
+div#footer p {
+    padding: 20px 10px;
+    
+}
+
+div#container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+div#navigation {
+    float: left;
+    width: 550px;
+}
+
+div#extra {
+    float: right;
+    width: 400px;
+}
+
+div#footer {
+    clear: both;
+    width: 100%;
+    height: 300px;
+}
+
+div#content{
+  border:2px solid tomato;
+  background-color: transparent;
+  background-image: url("../img/Dream-Engines-1.png");
+  background-repeat: no-repeat;
+  background-position:  top;
+  color: rgb(55, 0, 255);
+  text-shadow: #EBEBEB;
+  border-radius: 12px;
+ 
+}

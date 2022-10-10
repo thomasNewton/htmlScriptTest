@@ -1,0 +1,146 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #292929;
+    font: 90% Roboto, Arial, sans-serif;
+    font-weight: 300;
+}
+
+p {
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+ul li {
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+h3 {
+    padding: 5px 20px;
+    margin: 0;
+}
+
+div#header {
+    position: relative;
+}
+
+div#header h1 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+    background: #e0e0e0;
+    color: #292929;
+}
+
+div#header a {
+    position: absolute;
+    right: 0;
+    top: 23px;
+    padding: 10px;
+    color: #006;
+}
+
+div#navigation {
+    background: #7cb71c;
+}
+
+div#navigation li {
+    list-style: none;
+}
+
+div#extra {
+    background: #147FA9;
+}
+
+div#footer {
+    background: #42444e;
+    color: #fff;
+}
+
+div#footer p {
+    padding: 20px 10px;
+}
+
+div#container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+div#content {
+    float: left;
+    width: 500px;
+}
+
+div#navigation {
+    float: right;
+    width: 200px;
+}
+
+div#extra {
+    float: left;
+    width: 500px;
+}
+
+div#footer {
+    clear: both;
+    width: 100%;
+}
+
+
+
+.navButton {
+    background-color: transparent;
+    border: 2px solid #266DB6;
+    box-sizing: content-box;
+    color: #00132C;
+    font-family: "Avenir Next LT W01 Bold",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 23px;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .navButton:hover,
+  .navButton:active {
+    outline: 0;
+    border: 3px solid #266DB6;
+    
+  }
+  
+  .navButton:hover {
+   
+    cursor: pointer;
+  }
+  
+  .navButton:before {
+    background-color: #D5EDF6;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .navButton:hover:before {
+    background-color: #6DCFF6;
+  }
+  
+  @media (min-width: 768px) {
+    .navButton {
+      padding: 16px 32px;
+    }
+  }
