@@ -59,8 +59,7 @@ div#extra {
 
 div#footer {
     
-    background: #42444e;
-    color: #fff;
+    
 }
 
 div#footer p {
@@ -92,6 +91,9 @@ div#extra {
 div#footer {
     clear: left;
     width: 100%;
+    background: #42444e;
+    color: #fff;
+    align-items: center;
 }
 
 

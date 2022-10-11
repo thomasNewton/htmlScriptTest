@@ -1,0 +1,109 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    
+    }
+    
+    .header { grid-area: 1 / 1 / 2 / 6; }
+    .main_Area { grid-area: 2 / 2 / 5 / 6; }
+    .side_Nav { grid-area: 2 / 1 / 6 / 2; }
+    .footer { grid-area: 5 / 2 / 6 / 6; }
+
+    .header{
+        border: 4pt inset rgb(170, 171, 181);
+        background: #076585;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .main_Area{
+        background-color: #9dd2e2;
+        background-image: linear-gradient(249deg, #9dd2e2 0%, #c1d3e2 20%, #e2cfd9 40%, #cde0c0 60%, #c1d3e2 80%, #9dd2e2 100%);
+        border: 4pt inset rgb(170, 171, 181);
+    }
+
+    .side_Nav{
+        background-color: rgb(85, 98, 102);
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: 4pt inset rgb(170, 171, 181);
+    }
+    .footer{
+        float: left;
+        border: 4pt inset rgb(170, 171, 181);
+        background: #076585;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    }
+
+    div.footer p{
+        color: red;
+        float: left;
+        margin: 2pt;
+        
+        
+    }
+
+    div.footer textarea{
+        float: right;
+        width: 85%;
+        height: 95%;
+    }
+
+
+    #menu_ul{
+        list-style-type: none;
+        padding-left:15pt ;
+        padding-right: 15pt;
+        overflow: hidden;
+        
+        
+    }
+      .menu_li {
+        float: left;
+        background-color: transparent;
+        font-size: 18pt;
+        color:red;
+        background-color: blueviolet;
+        border: 2pt outset rgb(114, 123, 150) ;
+        width: 15%;
+        border-radius: 12px;
+        text-align: center;
+        padding: 2px;
+        margin-left: 1px;
+        margin-right: 20px;
+
+        background: linear-gradient(top, rgba(38,38,38,0.8),
+               #e6e6e6 25%, #fff 38%, #c5c5c5 87%,
+               rgba(38,38,38,0.8 ));
+        background : -webkit-linear-gradient(top, #c5c5c5,
+               #e6e6e6 25%, #fff 38%, #c5c5c5 87%,
+               #c5c5c5);      
+    }
+
+    .menu_li:hover{ 
+        transform: translate(2px);
+	    -webkit-transform: translate(2px);
+        background-image: -webkit-repeating-linear-gradient(
+            left,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 6%,
+            hsla(0,0%,100%, .1) 7.5%),
+           -webkit-repeating-linear-gradient(
+            left,hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0) 4%,
+            hsla(0,0%,0%, .03) 4.5%),
+           -webkit-repeating-linear-gradient(
+            left,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 1.2%,
+            hsla(0,0%,100%, .15) 2.2%),
+           linear-gradient(180deg,
+               hsl(0,0%,78%) 0%,
+               hsl(0,0%,90%) 47%,
+               hsl(0,0%,78%) 53%,
+               hsl(0,0%,70%) 100%);
+        outline-style: double;
+        outline-offset: 2px;
+    }
+
+    

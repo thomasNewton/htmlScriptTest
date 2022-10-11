@@ -1,11 +1,9 @@
-// variables are global by nature in a browser // so dont need to be declared here
+// variables are global by nature in a browser 
 
 var b1Clicks=0;
 var b2Clicks=0;
 
-
-
-var vidList=[];
+var vidList=[]; //add additonal vid to the array 
 vidList[0]='ioi'
 vidList[1]='<iframe width="560" height="315" src="https://www.youtube.com/embed/U_7CGl6VWaQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 vidList[2]='<iframe width="560" height="315" src="https://www.youtube.com/embed/T2mHyHhJSAU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -42,5 +40,20 @@ function button2Function(){
   b2State=b2Clicks%vidList.length;
   document.getElementById("button2").innerText="b2State="+b2State;
   document.getElementById("content").innerHTML=vidList[b2State];
+}
 
+function button3Function(){
+  document.getElementById("button3").innerText="b3State=";
+}
+
+function button4Function(){
+  document.getElementById("button4").innerText="b4State=";
+}
+
+function button5Function(){
+  document.getElementById("button5").innerText="b5State=";
+}
+
+function button6Function(){
+  document.getElementById("button6").innerText="b6State=";
 }
