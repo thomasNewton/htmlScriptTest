@@ -4,6 +4,8 @@
     grid-template-rows: 1fr repeat(3, 2fr) 1fr;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
+
+    
     
     }
     
@@ -17,9 +19,12 @@
         background: #076585;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
     }
 
-    .main_Area{
+    .main_Area{     
         background-color: #9dd2e2;
         background-image: linear-gradient(249deg, #9dd2e2 0%, #c1d3e2 20%, #e2cfd9 40%, #cde0c0 60%, #c1d3e2 80%, #9dd2e2 100%);
         border: 4pt inset rgb(170, 171, 181);
@@ -32,20 +37,22 @@
         background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         border: 4pt inset rgb(170, 171, 181);
     }
-    .footer{
-        float: left;
+    .footer{      
         border: 4pt inset rgb(170, 171, 181);
         background: #076585;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     }
 
-    div.footer p{
-        color: red;
+    div.footer p{  
         float: left;
-        margin: 2pt;
-        
-        
+        text-align:center;
+        display:table-cell;
+        margin-left:30pt;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:1.33em;
+        color:white;
+        text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;   
     }
 
     div.footer textarea{
@@ -59,15 +66,13 @@
         list-style-type: none;
         padding-left:15pt ;
         padding-right: 15pt;
-        overflow: hidden;
-        
-        
+        overflow: hidden;   
     }
+
+
       .menu_li {
         float: left;
         background-color: transparent;
-        font-size: 18pt;
-        color:red;
         background-color: blueviolet;
         border: 2pt outset rgb(114, 123, 150) ;
         width: 15%;
@@ -76,13 +81,17 @@
         padding: 2px;
         margin-left: 1px;
         margin-right: 20px;
-
         background: linear-gradient(top, rgba(38,38,38,0.8),
                #e6e6e6 25%, #fff 38%, #c5c5c5 87%,
                rgba(38,38,38,0.8 ));
         background : -webkit-linear-gradient(top, #c5c5c5,
                #e6e6e6 25%, #fff 38%, #c5c5c5 87%,
-               #c5c5c5);      
+               #c5c5c5);    
+               
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:1.55rem;
+        color:rgb(235, 229, 229);
+        text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
 
     .menu_li:hover{ 
@@ -104,6 +113,7 @@
                hsl(0,0%,70%) 100%);
         outline-style: double;
         outline-offset: 2px;
+        color:rgb(233, 203, 214);
     }
 
     
