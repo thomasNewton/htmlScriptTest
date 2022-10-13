@@ -1,40 +1,45 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-
+        {
+            "name": "Start_Server_N",
+            "program": "${workspaceFolder}/serverFiles/mainServer.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open main.html",
             "file": "c:\\Users\\tom\\htmlScriptTest\\main.html"
         },
-
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open page2.html",
             "file": "c:\\Users\\tom\\htmlScriptTest\\page2.html"
         },
-
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open test.html page",
             "file": "c:\\Users\\tom\\htmlScriptTest\\test.html"
         },
-
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open test2.html page",
             "file": "c:\\Users\\tom\\htmlScriptTest\\test2.html"
+        },
+        {
+            "name": "Python: File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "justMyCode": true
         }
-
-
-
     ]
 }
